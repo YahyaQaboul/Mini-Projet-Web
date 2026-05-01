@@ -1,0 +1,191 @@
+
+body {
+    scroll-behavior: smooth;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&q=80&w=1500') center/cover;
+    padding: 60px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); 
+}
+
+.section-title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #8b0000;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: none;
+    opacity: 0; 
+    transform: translateY(30px);
+}
+
+.card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card img {
+    transition: transform 0.6s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05); 
+}
+
+.card-content h3 {
+    font-size: 24px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.card-content p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.btn-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #8b0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-more:hover {
+    background: #5e0000;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+ .Galerie .slider {
+    position: relative;
+    width: 100%;
+    height: 700px; 
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.Galerie .slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: 0;
+    transform: scale(1.05);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.Galerie .slider img.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1;
+}
+
+.Galerie .slider img.active {
+    opacity: 1;
+}
+.Galerie .titre{
+    text-align: center;
+    background-color: rgba(128, 43, 0, 0.797);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+}
+
+.Galerie body {
+    background-color: #fcfaf5; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Galerie header {
+    background: linear-gradient(135deg, #8b0000, #d4a017); 
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.Galerie .titre {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.Galerie .container {
+    width: 85%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 30px;
+}
+
+
+.Galerie .place {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    padding-bottom: 15px;
+}
+
+.Galerie .place:hover {
+    transform: translateY(-10px); 
+}
+
+.Galerie .place h2 {
+    color: #8b0000;
+    margin: 20px 0;
+    font-family: 'Georgia', serif;
+}
+
+
+.Galerie .slider {
+    height: 300px; 
+    margin: 0 15px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Galerie .slider img {
+    transition: transform 0.5s ease;
+}
+
+.Galerie .place:hover .slider img {
+    transform: scale(1.1); 
+}
+.Galerie header {
+    background-image: url('https://www.transparenttextures.com/patterns/arabesque.png'); /* زخرفة خفيفة */
+}
