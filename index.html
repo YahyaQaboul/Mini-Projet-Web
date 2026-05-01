@@ -8,363 +8,6 @@
       <link rel="stylesheet" type="text/css" href="style.css">
       <title>Marrakech Évasion</title>
 
-      <style>
-
-        /* Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Body */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4e1d2;
-        }
-
-        /* Header */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            background-color: #8B3E2F;
-            color: white;
-        }
-
-        /* Logo */
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: #C9A24A;
-            letter-spacing: 2px;
-            text-align: left;
-        }
-
-        /* Menu icon */
-        .menu-icon {
-            font-size: 28px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: white;
-        }
-
-        /* Menu */
-        .nav-links {
-            position: absolute;
-            top: 70px;
-            right: 20px;
-            background: #8B3E2F;
-            list-style: none;
-            padding: 15px;
-            border-radius: 10px;
-            display: none;
-        }
-
-        .nav-links li {
-            margin: 10px 0;
-        }
-
-        .nav-links li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .nav-links li a:hover{
-          color: #dfd80e;
-        }
-
-        /* Section accueil */
-        .SectionAcceuil {
-            aspect-ratio: 1024 / 681; /* garder exactement les proportions de l'image */
-            background-image: url("images/Vue_panoramique_Marrakech.jpeg");
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-
-        .title {
-            font-size: 50px;
-        }
-
-        .slogan {
-            font-size: 22px;
-            font-style: italic;
-        }
-
-        /* Presentation */
-        .presentation {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .pr_title {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        .par_1 {
-            max-width: 800px;
-            margin: auto;
-        }
-
-        /* Pourquoi */
-        .pourquoi {
-            padding: 50px 20px;
-            background-color: #f8ede3;
-            text-align: center;
-        }
-
-        .pourquoi h3 {
-          font-size: 28px;
-        }
-
-        .par_2 {
-          max-width: 800px;
-          margin: auto;
-          margin-bottom: 30px;
-        }
-
-        .cards-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: white;
-            padding: 20px;
-            width: 250px;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-
-        /* ATTRACTIONS */
-        .attraction-cards {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .attraction-cards_title {
-            font-size: 28px;
-            margin-bottom: 30px;
-        }
-
-        /* ===== CHAQUE ATTRACTION ===== */
-        .attraction-card {
-            display: flex;
-            align-items: center;
-            margin: 20px auto;
-            max-width: 900px;
-            background: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: 0.3s;
-        }
-
-        /* IMAGE */
-        .attraction-card img {
-            width: 300px;
-            aspect-ratio: 1024 / 681;
-            object-fit: cover;
-        }
-
-        /* TEXTE */
-        .attraction-text {
-            padding: 20px;
-            text-align: left;
-        }
-
-        /* HOVER */
-        .attraction-card:hover {
-            transform: scale(1.02);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-
-
-        /* Galerie */
-        .partie_galerie {
-            text-align: center;
-            padding: 40px;
-        }
-
-        /* Voir plus */
-        .partie_galerie a {
-            text-decoration: none;
-        }
-
-        .partie_galerie a p {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #C9A24A;
-            color: black;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-
-        .partie_galerie a p:hover {
-            background: #8B3E2F;
-            color: white;
-        }
-
-        /* Contact */
-        .Contactez_nous {
-            background: #8B3E2F;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .Contactez_nous p {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .Contactez_nous a {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #C9A24A;
-            color: black;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-
-        .Contactez_nous a:hover {
-            background: #5b190c;
-            color: white;
-        }
-
-
-        /* FOOTER */
-
-        .footer {
-            background: #111;
-            color: #ccc;
-            padding: 40px 20px 20px;
-            text-align: center;
-        }
-                    
-        footer p {
-            margin: 10px 0;
-        }
-
-        /* CONTAINER */
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        /* SECTIONS */
-        .footer-section {
-            flex: 1;
-            min-width: 250px;
-        }
-
-        /* LOGO */
-        .footer-logo {
-            color: #C9A24A;
-            margin-bottom: 10px;
-        }
-
-        /* TITRES */
-        .footer-section h3 {
-            margin-bottom: 10px;
-            color: white;
-        }
-
-        /* TEXTES */
-        .footer-section p {
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        /* LISTE */
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 8px;
-        }
-
-        /* LIENS */
-        .footer-section ul li a {
-            color: #ccc;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .footer-section ul li a:hover {
-            color: #C9A24A;
-        }
-
-        /* BAS DU FOOTER */
-        .footer-bottom {
-            text-align: center;
-            border-top: 1px solid #333;
-            margin-top: 20px;
-            padding-top: 15px;
-            font-size: 14px;
-        }
-
-
-        /* Responsive */
-        @media (max-width: 768px) {
-
-            .logo {
-                font-size: 23px;
-            }
-
-            .navbar {
-                padding: 11px 22px;
-            }
-
-            .title {
-                font-size: 32px;
-            }
-
-            .slogan {
-                font-size: 14px;
-            }
-
-            .attraction-card {
-                flex-direction: column;
-            }
-
-            .attraction-card img {
-                width: 100%;
-            }
-
-            .partie_galerie a p {
-                padding: 8px 16px;
-            }
-
-            .Contactez_nous p {
-                font-size: 16px;
-            }
-
-            .Contactez_nous a {
-                padding: 8px 16px;
-            }
-        }
-
-      </style>
     </head>
 
     <body class="Accueil">
@@ -380,7 +23,7 @@
               <li><a href="Activities.html">Activités</a></li>
               <li><a href="Gallery.html">Galerie</a></li>
               <li><a href="Advices.html">Conseils</a></li>
-              <li><a href="About.html">A propos</a></li>
+              <li><a href="Hebergement.html">Hébergement</a></li>
               <li><a href="Contact.html">Contact</a></li>
           </ul>
       </nav>
@@ -439,43 +82,49 @@
       <section class="attraction-cards">
           <h3 class="attraction-cards_title">Top attractions à ne pas manquer</h3>
           <article class="attraction-card">
-              <img src="images/Vue_panoramique_Marrakech.jpeg">
+              <img src="images/Jemaa_el_Fna_Ya_1.jpg">
               <div class="attraction-text">
                   <h4>Jemaa el-Fna</h4>
                   <p>
-                      Véritable cœur de la ville, cette place mythique est animée à toute heure de la journée. 
-                      Le matin, elle accueille marchands et passants, tandis que le soir, elle se transforme en 
-                      un spectacle vivant avec musiciens, conteurs et stands de cuisine traditionnelle.
+                    La place Jemaa el-Fna est le véritable cœur vivant de Marrakech et l’un des lieux les plus emblématiques du Maroc. 
+                    Classée au patrimoine culturel immatériel de l’UNESCO, elle se transforme tout au long de la journée. Le matin, 
+                    elle est animée par les marchands et les passants, tandis que le soir, elle devient un spectacle à ciel ouvert avec 
+                    musiciens, conteurs, charmeurs de serpents et stands de cuisine traditionnelle. Son ambiance unique offre une immersion 
+                    totale dans la culture marocaine.
                   </p>
               </div>
           </article>
           <article class="attraction-card">
-              <img src="images/Vue_panoramique_Marrakech.jpeg">
+              <img src="images/Jardin_Majorelle_Ya_1.png">
               <div class="attraction-text">
                   <h4>Jardin Majorelle</h4>
                   <p>
-                      Ce jardin botanique offre un havre de paix loin de l’agitation de la ville. Avec ses couleurs 
-                      vives et ses plantes exotiques, il constitue un lieu idéal pour se détendre et admirer la beauté 
-                      de la nature.
+                    Le jardin Majorelle est un véritable havre de paix situé au cœur de Marrakech. Créé par le peintre français Jacques 
+                    Majorelle et restauré par Yves Saint Laurent, ce jardin botanique est célèbre pour ses couleurs vives, notamment le 
+                    bleu Majorelle, et sa grande diversité de plantes exotiques. Les allées ombragées, les bassins d’eau et l’architecture 
+                    artistique offrent un cadre idéal pour se détendre. C’est un lieu incontournable pour les amateurs de nature, d’art et 
+                    de photographie.
                   </p>
               </div>
           </article>
           <article class="attraction-card">
-              <img src="images/Vue_panoramique_Marrakech.jpeg">
+              <img src="images/Palais_de_la_Bahia_Ya_1.jpg">
               <div class="attraction-text">
                   <h4>Palais de la Bahia</h4>
                   <p>
-                      Ce palais historique est un chef-d'œuvre de l’architecture marocaine. Il reflète le luxe et le 
-                      raffinement des anciennes résidences royales, avec ses jardins, ses cours intérieures et ses 
-                      décorations détaillées.
+                    Le palais de la Bahia est l’un des plus beaux exemples de l’architecture marocaine traditionnelle. Construit au XIXe 
+                    siècle, il reflète le raffinement et le luxe des anciennes résidences royales. Le palais se distingue par ses vastes 
+                    cours, ses jardins luxuriants et ses décorations minutieuses, notamment les mosaïques et les plafonds sculptés. En 
+                    visitant ce lieu, on découvre l’élégance et le savoir-faire artisanal marocain, ainsi que l’histoire fascinante de la 
+                    vie à la cour.
                   </p>
               </div>
           </article>
       </section>
 
 
-      <section class="partie_galerie">
-          <a href="Gallery.html"><p>Voir plus</p></a>
+      <section class="partie_Destinations">
+          <a href="Destinations.html"><p>Voir plus</p></a>
       </section>
 
       <section class="Contactez_nous">
@@ -483,81 +132,47 @@
           <a href="Contact.html">Nous contacter</a>
       </section>
 
-      <footer class="footer">
-          <div class="footer-container">
+        <footer class="footer">
+            <div class="footer-container">
 
-              <!-- Logo + description -->
-              <div class="footer-section">
-                  <h2 class="footer-logo">Marrakech Évasion</h2>
-                  <p>
-                      Votre guide pour découvrir Marrakech : culture, gastronomie,
-                      lieux incontournables et expériences uniques.
-                  </p>
-              </div>
+                <!-- Logo + description -->
+                <div class="footer-section">
+                    <h2 class="footer-logo">Marrakech Évasion</h2>
+                    <p>
+                        Votre guide pour découvrir Marrakech : culture, gastronomie,
+                        lieux incontournables et expériences uniques.
+                    </p>
+                </div>
 
-              <!-- Liens rapides -->
-              <div class="footer-section">
-                  <h3>Liens rapides</h3>
-                  <ul>
-                      <li><a href="index.html">Accueil</a></li>
-                      <li><a href="Destinations.html">Destinations</a></li>
-                      <li><a href="Activities.html">Activités</a></li>
-                      <li><a href="Gallery.html">Galerie</a></li>
-                      <li><a href="Contact.html">Contact</a></li>
-                  </ul>
-              </div>
+                <!-- Liens rapides -->
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="Destinations.html">Destinations</a></li>
+                        <li><a href="Activities.html">Activités</a></li>
+                        <li><a href="Gallery.html">Galerie</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
 
-              <!-- Contact -->
-              <div class="footer-section">
-                  <h3>Contact</h3>
-                  <p>Email : contact@marrakechevasion.com</p> <!-- Faux compte -->
-                  <p>Téléphone : +212 6 00 00 00 00</p> <!-- Faux numéro -->
-                  <p>Adresse : Marrakech, Maroc</p> <!-- Exemple initial de l'adresse -->
-              </div>
+                <!-- Contact -->
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email : contact@marrakechevasion.com</p> <!-- Faux compte -->
+                    <p>Téléphone : +212 6 00 00 00 00</p> <!-- Faux numéro -->
+                    <p>Adresse : Marrakech, Maroc</p> <!-- Exemple initial de l'adresse -->
+                </div>
 
-          </div>
+            </div>
 
-          <!-- Bas du footer -->
-          <div class="footer-bottom">
-              <p>© 2026 Marrakech Évasion - Tous droits réservés</p>
-          </div>
-      </footer>
+            <!-- Bas du footer -->
+            <div class="footer-bottom">
+                <p>© 2026 Marrakech Évasion - Tous droits réservés</p>
+            </div>
+        </footer>
 
-      <script>
-
-          /* Sélection des éléments */
-          const menuIcon = document.getElementById("menu-icon");
-          const navLinks = document.getElementById("nav-links");
-
-          /* Toggle menu (ouvrir / fermer avec le bouton) */
-          menuIcon.addEventListener("click", function (e) {
-              e.stopPropagation(); // empêche le clic de remonter
-              navLinks.style.display =
-                  navLinks.style.display === "block" ? "none" : "block";
-          });
-
-          /* Empêcher la fermeture si on clique à l'intérieur du menu */
-          navLinks.addEventListener("click", function (e) {
-              e.stopPropagation();
-          });
-
-          /* Fermer le menu si on clique ailleurs */
-          document.addEventListener("click", function (e) {
-              if (navLinks.style.display === "block") {
-                  navLinks.style.display = "none";
-              }
-          });
-
-          /* Apparition automatique au chargement */
-          window.addEventListener("load", function () {
-              navLinks.style.display = "block";
-
-              setTimeout(() => {
-                  navLinks.style.display = "none";
-              }, 1500);
-          });
-
-      </script>
+      <script src="app.js"></script>
 
     </body>
   </html>
