@@ -879,3 +879,162 @@ footer p {
 /* Conseils */
 /* Conseils */
 /* Conseils */
+
+
+
+
+
+
+
+
+        /* Activités */    
+        /* Activités */
+        /* Activités */
+        /* Activités */
+        /* Activités */
+        
+        /* Titre de la page */
+        .activities .page-header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('koutoubia.avif');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        /* Structure des Activités */
+        .activities .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        .activities .activity-block { margin-bottom: 120px; }
+        .activities .activity-title { 
+            text-align: center; 
+            font-size: 36px; 
+            color: #8B3E2F; 
+            margin-bottom: 40px; 
+            position: relative;
+        }
+        .activities .activity-title::after {
+            content: ''; display: block; width: 60px; height: 3px; background: #C9A24A; margin: 10px auto;
+        }
+
+        /* Grille Dominante Texte (60% texte / 40% image) */
+        .activities .grid-row {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr; /* Le texte prend plus de place */
+            gap: 50px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        /* Inversion pour l'effet Z */
+        .activities .reverse { grid-template-columns: 1fr 1.5fr; }
+
+        .activities .activity-img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 15px 15px 0px #C9A24A; /* Style décoratif */
+        }
+
+        .activities .activity-text { 
+            font-size: 19px; 
+            text-align: justify;
+        }
+
+        .activities .activity-text h4 { color: #8B3E2F; margin-bottom: 15px; font-size: 24px; }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .activities .grid-row, .reverse { 
+                grid-template-columns: 1fr; 
+                gap: 20px;
+            }
+            .activities .activity-img { 
+                height: 300px; 
+                box-shadow: none; 
+                margin-top: 20px;
+            }
+            /* Consigne : Img 1 en haut -> Texte au dessus de Img 2 */
+            .activities .row-image-top { order: -1; }
+        }
+
+
+        /* Contact */
+        /* Contact */
+        /* Contact */
+        /* Contact */
+        /* Contact */
+        
+        /* En-tête de page */
+        .contact .page-header {
+            text-align: center;
+            padding: 60px 20px;
+            background: #8B3E2F;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .contact .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* Section Contact : Grille 2 colonnes */
+        .contact .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        /* Infos de contact */
+        .contact .contact-info {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact .contact-info h3 { color: #8B3E2F; margin-bottom: 20px; font-size: 24px; }
+        .contact .info-item { margin-bottom: 25px; }
+        .contact .info-item strong { color: #C9A24A; display: block; font-size: 14px; text-transform: uppercase; }
+        .contact .info-item p { font-size: 18px; margin-top: 5px; }
+
+        /* Formulaire */
+        .contact .contact-form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .contact .form-group { margin-bottom: 20px; }
+        .contact .form-group label { display: block; margin-bottom: 8px; font-weight: bold; }
+        .contact .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            outline-color: #C9A24A;
+        }
+        
+        .contact .btn-submit {
+            background: #C9A24A;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 100%;
+        }
+
+        .contact .btn-submit:hover { background: #8B3E2F; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contact .contact-wrapper { grid-template-columns: 1fr; }
+            .contact .page-header h1 { font-size: 28px; }
+        }
