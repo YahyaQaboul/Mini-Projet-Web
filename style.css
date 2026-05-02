@@ -7,7 +7,9 @@
 .Bloc_titre {
     background: linear-gradient(rgba(139, 0, 0, 0.8), rgba(139, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&q=80&w=1500') center/cover;
     padding: 60px 20px;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); 
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    position: relative;
+    z-index: 1;
 }
 
 .section-title {
@@ -82,7 +84,8 @@
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 }
- .Galerie .slider {
+
+.Galerie .slider {
     position: relative;
     width: 100%;
     height: 700px; 
@@ -318,6 +321,8 @@ body {
     padding: 15px 30px;
     background-color: #8B3E2F;
     color: white;
+    position: relative;
+    z-index: 1001;
 }
 
 /* Logo */
@@ -348,6 +353,7 @@ body {
     padding: 15px;
     border-radius: 10px;
     display: none;
+    z-index: 1000;
 }
 
 .nav-links li {
@@ -472,7 +478,7 @@ footer p {
 /* Accueil */
 
 /* Section accueil */
-.Accueil .SectionAcceuil {
+.Accueil .SectionAcceuil_Ya {
     aspect-ratio: 1024 / 681; /* garder exactement les proportions de l'image */
     background-image: url("images/Vue_panoramique_Marrakech.jpeg");
     background-size: cover;
@@ -526,14 +532,14 @@ footer p {
     margin-bottom: 30px;
 }
 
-.Accueil .cards-container {
+.Accueil .PourquoiCards-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.Accueil .card {
+.Accueil .PourquoiCard {
     background: white;
     padding: 20px;
     width: 250px;
@@ -541,7 +547,7 @@ footer p {
     transition: 0.3s;
 }
 
-.Accueil .card:hover {
+.Accueil .PourquoiCard:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
@@ -791,3 +797,85 @@ footer p {
 /*Destinations */
 /*Destinations */
 /*Destinations */
+
+
+
+
+
+
+
+
+
+
+/* Conseils */
+/* Conseils */
+/* Conseils */
+/* Conseils */
+/* Conseils */
+
+/* Page Conseils */
+
+/* Introduction */
+.Conseils .introduction {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.Conseils .intr_title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.Conseils .par_1 {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Container des articles */
+.Conseils .conseils-container {
+    max-width: 900px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Articles */
+.Conseils .conseil {
+    padding: 25px;
+    background-color: #e8cdb8;
+}
+
+/* Alternance couleur */
+.Conseils .conseil.alt {
+    background-color: #d9b8a3;
+}
+
+/* Titre */
+.Conseils .conseil h4 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Texte */
+.Conseils .conseil p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Border radius uniquement premier et dernier */
+.Conseils .conseil:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Conseils .conseil:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Conseils */
+/* Conseils */
+/* Conseils */
+/* Conseils */
+/* Conseils */
