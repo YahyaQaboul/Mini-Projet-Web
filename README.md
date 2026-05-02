@@ -1,12 +1,12 @@
 🌍 Mini Projet Web – Découverte de Marrakech
 
-  1. Description
+  i. Description
 
 Ce projet est un site web statique développé dans le cadre d’un mini-projet académique.
 Il a pour objectif de présenter la ville de Marrakech à travers ses destinations, ses activités, sa culture et ses paysages.
 Le site propose une expérience immersive avec une navigation simple.
 
-  2. Objectifs du projet
+  ii. Objectifs du projet
 
 - Mettre en pratique les bases du développement web
 - Créer un site web structuré et responsive
